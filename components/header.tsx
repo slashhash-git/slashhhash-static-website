@@ -1,11 +1,8 @@
 "use client"
 
 import Link from "next/link"
-import { useRouter } from "next/router"
 
 export function Header() {
-  const router = useRouter()
-
   return (
     <header className="w-full bg-white border-b border-gray-100">
       <div className="container mx-auto px-4 flex h-16 items-center justify-between">
