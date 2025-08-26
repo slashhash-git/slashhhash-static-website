@@ -1,10 +1,11 @@
-@import "tailwindcss";
-@import "tw-animate-css";
-
-/* Added missing Tailwind base directive to fix build error */
+/* Using standard Tailwind imports instead of @import "tailwindcss" for better GitHub Pages compatibility */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Removed tw-animate-css import that was causing build error */
+
+/* Added missing Tailwind base directive to fix build error */
 
 @custom-variant dark (&:is(.dark *));
 
