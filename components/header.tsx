@@ -1,6 +1,11 @@
+"use client"
+
 import Link from "next/link"
+import { useRouter } from "next/router"
 
 export function Header() {
+  const router = useRouter()
+
   return (
     <header className="w-full bg-white border-b border-gray-100">
       <div className="container mx-auto px-4 flex h-16 items-center justify-between">
@@ -12,7 +17,7 @@ export function Header() {
             </div>
           </div>
           <div className="flex items-center">
-            <Link href="/" className="flex items-center">
+            <Link href="/" prefetch={false} className="flex items-center">
               <span className="text-xl font-medium text-gray-900">/#</span>
               <span className="text-xl font-medium text-gray-900 ml-1">creators</span>
             </Link>
@@ -20,22 +25,30 @@ export function Header() {
         </div>
 
         <nav className="hidden md:flex items-center space-x-8">
-          <Link href="/discover" className="text-gray-700 hover:text-red-500 transition-colors flex items-center">
+          <Link
+            href="/discover"
+            prefetch={false}
+            className="text-gray-700 hover:text-red-500 transition-colors flex items-center"
+          >
             /#<span className="text-red-500 ml-1">discover</span>
             <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
             </svg>
           </Link>
-          <Link href="/content" className="text-gray-700 hover:text-red-500 transition-colors flex items-center">
+          <Link
+            href="/content"
+            prefetch={false}
+            className="text-gray-700 hover:text-red-500 transition-colors flex items-center"
+          >
             /#<span className="text-red-500 ml-1">content</span>
             <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
             </svg>
           </Link>
-          <Link href="/analytics" className="text-gray-700 hover:text-red-500 transition-colors">
+          <Link href="/analytics" prefetch={false} className="text-gray-700 hover:text-red-500 transition-colors">
             /#<span className="text-red-500 ml-1">analytics</span>
           </Link>
-          <Link href="/campaigns" className="text-gray-700 hover:text-red-500 transition-colors">
+          <Link href="/campaigns" prefetch={false} className="text-gray-700 hover:text-red-500 transition-colors">
             /#<span className="text-red-500 ml-1">campaigns</span>
           </Link>
         </nav>
