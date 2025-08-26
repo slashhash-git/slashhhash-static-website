@@ -1,5 +1,3 @@
-import { Card, CardContent } from "@/components/ui/card"
-
 const teamMembers = [
   {
     name: "Flori Parauan",
@@ -23,32 +21,35 @@ const teamMembers = [
 
 export function TeamSection() {
   return (
-    <section id="team" className="py-20 bg-muted">
+    <section id="team" className="py-20 bg-gray-50">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="font-space-grotesk font-bold text-3xl lg:text-5xl mb-4">Meet Our Team</h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Experienced professionals dedicated to revolutionizing influencer marketing
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {teamMembers.map((member, index) => (
-            <Card key={index} className="text-center border-border">
-              <CardContent className="pt-6">
-                <div className="mb-4">
+        <div className="flex justify-center">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-4xl">
+            {teamMembers.map((member, index) => (
+              <div
+                key={index}
+                className="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-200 text-center"
+              >
+                <div className="mb-6">
                   <img
                     src={member.image || "/placeholder.svg"}
                     alt={member.name}
                     className="w-32 h-32 rounded-full mx-auto object-cover"
                   />
                 </div>
-                <h3 className="font-space-grotesk font-bold text-xl mb-2">{member.name}</h3>
-                <p className="text-primary font-medium mb-3">{member.role}</p>
-                <p className="text-muted-foreground text-sm leading-relaxed">{member.bio}</p>
-              </CardContent>
-            </Card>
-          ))}
+                <h3 className="font-space-grotesk font-bold text-xl mb-2 text-gray-900">{member.name}</h3>
+                <p className="text-red-500 font-medium mb-4 font-mono">{member.role}</p>
+                <p className="text-gray-600 text-sm leading-relaxed">{member.bio}</p>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>
