@@ -4,6 +4,7 @@ const nextConfig = {
   trailingSlash: true,
   basePath: process.env.NODE_ENV === 'production' ? '/slashhhash-static-website' : '',
   assetPrefix: process.env.NODE_ENV === 'production' ? '/slashhhash-static-website/' : '',
+  skipTrailingSlashRedirect: true,
   eslint: {
     ignoreDuringBuilds: true,
   },
