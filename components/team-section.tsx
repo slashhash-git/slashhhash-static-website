@@ -5,19 +5,19 @@ const teamMembers = [
     name: "Flori Parauan",
     role: "#tech",
     bio: "C++ developer by birth, Software Engineer by design. Former tech executive with 20+ years in tech.",
-    image: "/flori-parauan-mountain.png",
+    image: "flori-parauan-mountain.png",
   },
   {
     name: "Bram Goosens",
     role: "#bi&operations",
     bio: "A BI and operations expert who turns data chaos into clarity. As a former leader of BI teams at major tech companies, he's a master of wrangling messy metrics and uncovering the single, beautiful source of truth. He speaks fluent data and makes sure the numbers always tell the right story.",
-    image: "/bram-kite-surfer.png",
+    image: "bram-kite-surfer.png",
   },
   {
     name: "Volodymyr",
     role: "#tech",
     bio: "He's tamed the wild beasts of CSS and navigated the ever-shifting landscape of JavaScript frameworks, all in the name of perfect user experiences. His quest? To turn complex designs into a pixel-perfect, interactive reality.",
-    image: "/volodymyr-teddy-bear.png",
+    image: "volodymyr-teddy-bear.png",
   },
 ]
 
