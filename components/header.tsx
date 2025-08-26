@@ -1,3 +1,5 @@
+import Link from "next/link"
+
 export function Header() {
   return (
     <header className="w-full bg-white border-b border-gray-100">
@@ -10,32 +12,32 @@ export function Header() {
             </div>
           </div>
           <div className="flex items-center">
-            <a href="/" className="flex items-center">
+            <Link href="/" className="flex items-center">
               <span className="text-xl font-medium text-gray-900">/#</span>
               <span className="text-xl font-medium text-gray-900 ml-1">creators</span>
-            </a>
+            </Link>
           </div>
         </div>
 
         <nav className="hidden md:flex items-center space-x-8">
-          <a href="/discover" className="text-gray-700 hover:text-red-500 transition-colors flex items-center">
+          <Link href="/discover" className="text-gray-700 hover:text-red-500 transition-colors flex items-center">
             /#<span className="text-red-500 ml-1">discover</span>
             <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
             </svg>
-          </a>
-          <a href="/content" className="text-gray-700 hover:text-red-500 transition-colors flex items-center">
+          </Link>
+          <Link href="/content" className="text-gray-700 hover:text-red-500 transition-colors flex items-center">
             /#<span className="text-red-500 ml-1">content</span>
             <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
             </svg>
-          </a>
-          <a href="/analytics" className="text-gray-700 hover:text-red-500 transition-colors">
+          </Link>
+          <Link href="/analytics" className="text-gray-700 hover:text-red-500 transition-colors">
             /#<span className="text-red-500 ml-1">analytics</span>
-          </a>
-          <a href="/campaigns" className="text-gray-700 hover:text-red-500 transition-colors">
+          </Link>
+          <Link href="/campaigns" className="text-gray-700 hover:text-red-500 transition-colors">
             /#<span className="text-red-500 ml-1">campaigns</span>
-          </a>
+          </Link>
         </nav>
 
         <div className="flex items-center space-x-2">
