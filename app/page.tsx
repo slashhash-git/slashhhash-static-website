@@ -1,11 +1,11 @@
-import { Header } from "@/components/header"
-import { HeroSection } from "@/components/hero-section"
-import { SolutionsSection } from "@/components/solutions-section"
-import { ProductFeatures } from "@/components/product-features"
-import { TeamSection } from "@/components/team-section"
-import { Footer } from "@/components/footer"
-import { BusinessOverview } from "@/components/business-overview"
-import { ProductStage } from "@/components/product-stage"
+import { Header } from "@/components/header";
+import { HeroSection } from "@/components/hero-section";
+import { SolutionsSection } from "@/components/solutions-section";
+import { ProductFeatures } from "@/components/product-features";
+import { TeamSection } from "@/components/team-section";
+import { Footer } from "@/components/footer";
+import { BusinessOverview } from "@/components/business-overview";
+import { ProductStage } from "@/components/product-stage";
 
 export default function HomePage() {
   return (
@@ -14,12 +14,12 @@ export default function HomePage() {
       <main>
         <HeroSection />
         <BusinessOverview />
-        <SolutionsSection />
-        <ProductFeatures />
+        {/* <SolutionsSection /> */}
+        {/* <ProductFeatures /> */}
         <ProductStage />
         <TeamSection />
       </main>
       <Footer />
     </div>
-  )
+  );
 }

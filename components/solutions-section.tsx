@@ -1,13 +1,16 @@
-import { Terminal, Zap, Target, TrendingUp, Brain } from "lucide-react"
+import { Terminal, Zap, Target, TrendingUp, Brain } from "lucide-react";
 
 export function SolutionsSection() {
   return (
     <section className="py-20 bg-gray-50">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">Overclocking Social Marketing</h2>
+          <h2 className="text-4xl font-bold text-gray-900 mb-4">
+            Overclocking Social Marketing
+          </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            While others throttle at basic metrics, our AI console delivers overdrive performance
+            While others throttle at basic metrics, our AI console delivers
+            overdrive performance
           </p>
         </div>
 
@@ -19,13 +22,18 @@ export function SolutionsSection() {
                 <Brain className="w-6 h-6 text-red-600" />
               </div>
               <div>
-                <h3 className="text-lg font-semibold text-gray-900">#bias_free</h3>
-                <code className="text-sm text-red-600">AI.analyze(audience_data)</code>
+                <h3 className="text-lg font-semibold text-gray-900">
+                  #bias_free
+                </h3>
+                <code className="text-sm text-red-600">
+                  AI.analyze(audience_data)
+                </code>
               </div>
             </div>
             <p className="text-gray-600">
-              Content creation driven by real audience preferences and social data, not marketer assumptions. Our AI
-              eliminates subjective bias with objective insights.
+              Content creation driven by real audience preferences and social
+              data, not marketer assumptions. Our AI eliminates subjective bias
+              with objective insights.
             </p>
           </div>
 
@@ -36,13 +44,18 @@ export function SolutionsSection() {
                 <Zap className="w-6 h-6 text-green-600" />
               </div>
               <div>
-                <h3 className="text-lg font-semibold text-gray-900">#cost_optimized</h3>
-                <code className="text-sm text-green-600">AI.optimize(budget)</code>
+                <h3 className="text-lg font-semibold text-gray-900">
+                  #cost_optimized
+                </h3>
+                <code className="text-sm text-green-600">
+                  AI.optimize(budget)
+                </code>
               </div>
             </div>
             <p className="text-gray-600">
-              Automated workflows replace expensive manual processes. Intelligent resource allocation maximizes ROI
-              while minimizing operational overhead.
+              Automated workflows replace expensive manual processes.
+              Intelligent resource allocation maximizes ROI while minimizing
+              operational overhead.
             </p>
           </div>
 
@@ -53,13 +66,16 @@ export function SolutionsSection() {
                 <Terminal className="w-6 h-6 text-blue-600" />
               </div>
               <div>
-                <h3 className="text-lg font-semibold text-gray-900">#simplified</h3>
+                <h3 className="text-lg font-semibold text-gray-900">
+                  #simplified
+                </h3>
                 <code className="text-sm text-blue-600">console.execute()</code>
               </div>
             </div>
             <p className="text-gray-600">
-              Complex multi-platform campaigns managed through a single AI console. Natural language commands replace
-              convoluted interfaces and manual coordination.
+              Complex multi-platform campaigns managed through a single AI
+              console. Natural language commands replace convoluted interfaces
+              and manual coordination.
             </p>
           </div>
 
@@ -70,13 +86,18 @@ export function SolutionsSection() {
                 <Target className="w-6 h-6 text-purple-600" />
               </div>
               <div>
-                <h3 className="text-lg font-semibold text-gray-900">#precision_targeting</h3>
-                <code className="text-sm text-purple-600">AI.target(niche)</code>
+                <h3 className="text-lg font-semibold text-gray-900">
+                  #precision_targeting
+                </h3>
+                <code className="text-sm text-purple-600">
+                  AI.target(niche)
+                </code>
               </div>
             </div>
             <p className="text-gray-600">
-              Dynamic audience segmentation adapts to changing preferences in real-time. Content resonates with specific
-              niches through AI-powered personalization.
+              Dynamic audience segmentation adapts to changing preferences in
+              real-time. Content resonates with specific niches through
+              AI-powered personalization.
             </p>
           </div>
 
@@ -87,13 +108,18 @@ export function SolutionsSection() {
                 <TrendingUp className="w-6 h-6 text-orange-600" />
               </div>
               <div>
-                <h3 className="text-lg font-semibold text-gray-900">#predictive_foresight</h3>
-                <code className="text-sm text-orange-600">AI.forecast(trends)</code>
+                <h3 className="text-lg font-semibold text-gray-900">
+                  #predictive_foresight
+                </h3>
+                <code className="text-sm text-orange-600">
+                  AI.forecast(trends)
+                </code>
               </div>
             </div>
             <p className="text-gray-600">
-              Active social data sourcing enables trend prediction and market shift forecasting. Stay ahead of
-              competition with AI-powered market intelligence.
+              Active social data sourcing enables trend prediction and market
+              shift forecasting. Stay ahead of competition with AI-powered
+              market intelligence.
             </p>
           </div>
 
@@ -104,17 +130,20 @@ export function SolutionsSection() {
                 <Zap className="w-6 h-6 text-red-600" />
               </div>
               <div>
-                <h3 className="text-lg font-semibold text-gray-900">#high_performance</h3>
+                <h3 className="text-lg font-semibold text-gray-900">
+                  #high_performance
+                </h3>
                 <code className="text-sm text-red-600">system.overdrive()</code>
               </div>
             </div>
             <p className="text-gray-600">
-              Real-time content optimization and automated campaign management deliver maximum engagement. Performance
-              analytics provide transparent ROI insights.
+              Real-time content optimization and automated campaign management
+              deliver maximum engagement. Performance analytics provide
+              transparent ROI insights.
             </p>
           </div>
         </div>
       </div>
     </section>
-  )
+  );
 }
