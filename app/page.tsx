@@ -4,6 +4,8 @@ import { SolutionsSection } from "@/components/solutions-section"
 import { ProductFeatures } from "@/components/product-features"
 import { TeamSection } from "@/components/team-section"
 import { Footer } from "@/components/footer"
+import { BusinessOverview } from "@/components/business-overview"
+import { ProductStage } from "@/components/product-stage"
 
 export default function HomePage() {
   return (
@@ -11,8 +13,10 @@ export default function HomePage() {
       <Header />
       <main>
         <HeroSection />
+        <BusinessOverview />
         <SolutionsSection />
         <ProductFeatures />
+        <ProductStage />
         <TeamSection />
       </main>
       <Footer />
